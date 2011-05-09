@@ -6,7 +6,6 @@
 " For example:
 "
 " #! /bin/bash
-" 
 " NOFORMAT="false"
 " if [ "$1" == "NOFORMAT" ]; then
 "    NOFORMAT="true"
