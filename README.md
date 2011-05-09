@@ -1,4 +1,4 @@
-Deal simple integration for running sbt as the make program for scala files.
+Dead simple integration for running sbt as the make program for scala files.
 
 Uses the mechanism recommended by http://code.google.com/p/simple-build-tool/wiki/IntegrationSupport
 
