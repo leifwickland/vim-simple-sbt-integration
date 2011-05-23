@@ -11,7 +11,9 @@
 "    NOFORMAT="true"
 "    shift
 " fi 
-" java -Dsbt.log.noformat=$NOFORMAT -Xmx512M -jar `dirname $0`/sbt-launch.jar "$@"
+" CURDIR=`readlink -f $0`
+" CURDIR=`dirname $CURDIR`
+" java -Dsbt.log.noformat=$NOFORMAT -Xmx512M -jar $CURDIR/sbt-launch.jar "$@"
 
 " Vim wouldn't match any lines until I told sbt to output no color with noformat=true
 setlocal makeprg=sbt\ NOFORMAT\ compile
